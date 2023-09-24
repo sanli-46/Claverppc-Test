@@ -35,7 +35,6 @@ public class Parents {
     public void verifyContainsText(WebElement element, String value){
         wait.until(ExpectedConditions.textToBePresentInElement(element,value));
         Assert.assertTrue(element.getText().toLowerCase().contains(value.toLowerCase()));
-        //action la ESC ye basarak açık kutucuk veya mesaj var ise kapat
         new Actions(GWD.getDriver()).sendKeys(Keys.ESCAPE).build().perform();
     }
 
@@ -44,5 +43,20 @@ public class Parents {
         scrollToElement(element);
         JavascriptExecutor js=(JavascriptExecutor)GWD.getDriver();
         js.executeScript("arguments[0].click();", element);
+    }
+
+    public void scrollToTop() {
+        JavascriptExecutor js = (JavascriptExecutor) GWD.getDriver();
+        js.executeScript("window.scrollTo(0, 0);");
+    }
+
+    public void actionClick(WebElement element) {
+        Actions actions = new Actions(GWD.getDriver());
+        actions.moveToElement(element).click().perform();
+    }
+
+    public void scrollByPixel(int pixel) {
+        JavascriptExecutor js = (JavascriptExecutor) GWD.getDriver();
+        js.executeScript("window.scrollTo(0," + pixel + ");");
     }
 }
