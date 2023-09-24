@@ -39,7 +39,6 @@ public class RegisterSteps {
         cl.myClick(cl.CreateAccountBtn);
 
     }
-
     @And("User sending the keys in Elements")
     public void userSendingTheKeysInElements(DataTable table) throws InterruptedException {
         List<List<String>> rows = table.asLists(String.class);

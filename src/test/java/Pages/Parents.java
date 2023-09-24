@@ -58,5 +58,6 @@ public class Parents {
     public void scrollByPixel(int pixel) {
         JavascriptExecutor js = (JavascriptExecutor) GWD.getDriver();
         js.executeScript("window.scrollTo(0," + pixel + ");");
+
     }
 }

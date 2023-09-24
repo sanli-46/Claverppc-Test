@@ -113,7 +113,6 @@ public class SendMailSteps {
         cl.mySendKeys(cl.Message, "Banka havalesi henüz yapıldı, ödeme dekontu ektedir. Team8 TechnoStudy");
         Thread.sleep(2000);
     }
-
     @And("Click the Send button")
     public void clickTheSendButton() {
         cl.myClick(cl.SendBtn);

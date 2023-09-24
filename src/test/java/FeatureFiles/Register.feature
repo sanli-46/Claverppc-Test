@@ -15,7 +15,6 @@ Feature: DataTable Register Functionality
       | Email       | wokisa921240@alvisani.com   |
       | Password    | Teammmm                     |
 
-
     And Click on the element in Elements
       | RegisterBtn |
 

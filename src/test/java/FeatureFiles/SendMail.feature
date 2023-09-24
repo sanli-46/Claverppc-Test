@@ -5,6 +5,7 @@ Feature: Send Mail to Website Team functionality
     When Click the sign in button
     Then Enter email and password and click sign in button
 
+
   @SmokeTest @Regression
   Scenario: Successfully sending a receipt email
 

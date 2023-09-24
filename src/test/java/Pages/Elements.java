@@ -98,7 +98,6 @@ public class Elements extends Parents {
                                 default:
                                         throw new RuntimeException("Element is not defined for: " + strElement);
                         }
-
                 }
         }
 
