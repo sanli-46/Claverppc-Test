@@ -5,6 +5,8 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import java.util.List;
+
 public class Elements extends Parents {
 
         public Elements() {
@@ -99,5 +101,35 @@ public class Elements extends Parents {
                                         throw new RuntimeException("Element is not defined for: " + strElement);
                         }
                 }
-        }
+
+        @FindBy(xpath = "//a[@class='login']")
+        public WebElement HmSignInButton;
+        @FindBy (id = "email")
+        public WebElement emailInput;
+        @FindBy (id = "passwd")
+        public WebElement passwInput;
+        @FindBy(id = "SubmitLogin")
+        public WebElement signInButton;
+        @FindBy(xpath = "//a[@class='home']")
+        public WebElement homeIcon;
+        @FindBy(xpath = "//div[@class='alert alert-danger']/p")
+        public WebElement loginErrorMsg;
+
+        //LoginElements-E*
+
+        //AddtoCardList element
+        @FindBy(xpath = "(//a[@title='Dresses'])[2]")
+        public WebElement dressesButton;
+        @FindBy(xpath = "//span[text()='Add to cart']")
+        public List<WebElement> AddToCardButtons;
+        @FindBy(xpath = "//span[@title='Continue shopping']")
+        public WebElement ContShoppingButton;
+        @FindBy(xpath = "//a[@title='View my shopping cart']")
+        public WebElement myCardLabel;
+        @FindBy(xpath = "//td[@class='cart_description']/p")
+        public List<WebElement> dressesName;
+        @FindBy(xpath = "//div[@class='product-container']")
+        public List<WebElement> dressesBox;
+
+}
 
