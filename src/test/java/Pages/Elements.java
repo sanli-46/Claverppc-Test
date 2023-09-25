@@ -126,10 +126,12 @@ public class Elements extends Parents {
         public WebElement ContShoppingButton;
         @FindBy(xpath = "//a[@title='View my shopping cart']")
         public WebElement myCardLabel;
-        @FindBy(xpath = "//td[@class='cart_description']/p")
+        @FindBy(xpath = "//td[@class='cart_description']")
         public List<WebElement> dressesName;
         @FindBy(xpath = "//div[@class='product-container']")
         public List<WebElement> dressesBox;
+        @FindBy(xpath = "//div[@id='center_column']/h1")
+        public WebElement shopCardSummaryText; //only for scroll
 
 }
 
