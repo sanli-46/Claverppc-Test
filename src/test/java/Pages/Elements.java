@@ -12,7 +12,62 @@ public class Elements extends Parents {
         public Elements() {
                 PageFactory.initElements(GWD.getDriver(), this);
         }
+        //Case 5 and 7 Elements
+        @FindBy(xpath = "//a[@class='button-exclusive btn btn-default']")
+        public WebElement orderHistoryBtn;
 
+        @FindBy(xpath = "(//a[@class='color-myaccount'])[1]")
+        public WebElement orderNumber;
+
+        @FindBy(xpath = "//p[@class='alert alert-success']")
+        public WebElement orderCongirmMsg;
+
+        @FindBy(xpath = "//span[@id='total_price']")
+        public WebElement totalPrice;
+
+        @FindBy(xpath = "//span[@id='amount']")
+        public WebElement amount;
+
+        @FindBy(xpath = "//input[@id='paypal-standard-btn']")
+        public WebElement paypal;
+        @FindBy(xpath = "//div[@class='message']")
+        public WebElement errPaypalmsg;
+        @FindBy(xpath = "(//p[@class='payment_module'])[3]")
+        public WebElement creditCard;
+        @FindBy(xpath = "(//body)[1]")
+        public WebElement errcreditmsg;
+        @FindBy(xpath = "(//p[@class='payment_module'])[1]")
+        public WebElement bankTransfer;
+
+        @FindBy(xpath = "(//a[@title='Dresses'])[2]")
+        public WebElement dressesBtn;
+        @FindBy(xpath = "//span[@class='heading-counter']")
+        public WebElement headingCounter;
+        @FindBy(xpath = "(//div[@class='product-count'])[2]")
+        public WebElement productCount;
+        @FindBy(xpath = "//a[@class='product-name']")
+        public List<WebElement> productName;
+
+        @FindBy(xpath = "//div[@class='shopping_cart']/a")
+        public WebElement cartBtn;
+
+        @FindBy(xpath = "//a[@id='button_order_cart']/span")
+        public WebElement checkoutBtn;
+        @FindBy(xpath = "//span[text()='Proceed to checkout']")
+        public WebElement proceedCheckoutBtn;
+        @FindBy(xpath = " //button[@class=\"button btn btn-default standard-checkout button-medium\"]")
+        public WebElement errproceedCheckoutBtn;
+
+        @FindBy(xpath = "//button[@class=\"button btn btn-default button-medium\"]")
+        public WebElement PaymentCheckoutBtn;
+
+
+        @FindBy(xpath = "//input[@class='delivery_option_radio']")
+        public WebElement radioCheck;
+
+        @FindBy(xpath = "//div[@id='uniform-cgv']")
+        public WebElement agreecheckbox;
+         //Case 5 and 7 Elements
         //Case 1 Elements
 
         @FindBy(css = "a.login[title='Log in to your customer account']")
