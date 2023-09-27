@@ -6,8 +6,10 @@
  * _Sinem YURDUSEVER_ -- **Tester**
  * _Murat ENGİNEL_ -- **Tester**
  * _Fatih GÜVENÇ_ -- **Tester**
+#
+#
 
-   > File Project From Version Control  
+> File Project From Version Control  
 > Copy to URL  
    
 **_git@github.com:sanli-46/Project.Claverppc-Test.git_**  
@@ -45,7 +47,7 @@
 #
 
 
-##Plagins
+## Plagins
 
 - Gherkin
 - Cucumber For Java
