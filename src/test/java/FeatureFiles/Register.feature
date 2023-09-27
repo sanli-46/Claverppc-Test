@@ -3,7 +3,7 @@ Feature: DataTable Register Functionality
 
   @SmokeTest @Regression
   Scenario: Create New Account
-    Given Navigate to the cleverppc
+    Given Navigate to CleverEcommerce
     When Click the sign in button
     Then Enter email address and click create account button
 

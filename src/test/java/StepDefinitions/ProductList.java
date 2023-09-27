@@ -11,10 +11,6 @@ import io.cucumber.java.en.When;
 public class ProductList extends GWD {
     Elements cl = new Elements();
 
-    @Given("Navigate to Cleverppc")
-    public void navigateToCleverppc() {
-        GWD.getDriver().get("https://cleverppc.com/prestashop4/");
-    }
 
     @When("Searched product listing")
     public void searchedProductListing() {

@@ -15,16 +15,12 @@ import java.util.List;
 public class RegisterSteps {
     Elements cl = new Elements();
 
-    @Given("Navigate to the cleverppc")
-    public void navigateToTheCleverppc() {
-        GWD.getDriver().get("https://cleverppc.com/prestashop4/");
-    }
 
     @When("Click the sign in button")
     public void clickTheSignInButton() throws InterruptedException{
         cl.scrollByPixel(415);
         Thread.sleep(1000);
-        cl.myClick(cl.SignInBtn);
+        cl.MyClick(cl.SignInBtn);
     }
 
     @Then("Enter email address and click create account button")
@@ -36,7 +32,7 @@ public class RegisterSteps {
         Thread.sleep(1000);
         cl.mySendKeys(cl.NewEmail, "wokisa921240@alvisani.com");
         Thread.sleep(1000);
-        cl.myClick(cl.CreateAccountBtn);
+        cl.MyClick(cl.CreateAccountBtn);
 
     }
     @And("User sending the keys in Elements")
@@ -58,7 +54,7 @@ public class RegisterSteps {
         for (String element : elements) {
             cl.scrollByPixel(415);
             Thread.sleep(1000);
-            cl.myClick(cl.getWebElement(element));
+            cl.MyClick(cl.getWebElement(element));
         }
     }
 

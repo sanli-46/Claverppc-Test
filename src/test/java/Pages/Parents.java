@@ -20,11 +20,6 @@ import static Utilitys.GWD.driver;
 public class Parents {
     public WebDriverWait wait = new WebDriverWait(GWD.getDriver(), Duration.ofSeconds(20));
 
-    public void myClick(WebElement element) {
-        wait.until(ExpectedConditions.elementToBeClickable(element));
-        //scrollToElement(element);
-        element.click();
-    }
 
     public void refList(WebElement element){
         wait.until(ExpectedConditions.visibilityOf(element));
@@ -49,13 +44,7 @@ public class Parents {
 
     }
 
-    public void MySendKeys(WebElement element, String str) {
-        wait.until(ExpectedConditions.visibilityOf(element));
-        MyScrollToElement(element);
-        element.click();
-        element.clear();
-        element.sendKeys(str);
-    }
+
 
     public void MyScrollToElement(WebElement element) {
         JavascriptExecutor js = (JavascriptExecutor) GWD.getDriver();
@@ -79,6 +68,7 @@ public class Parents {
     public void mySendKeys(WebElement element, String yazi) {
         wait.until(ExpectedConditions.visibilityOf(element));
         scrollToElement(element);
+        element.click();
         element.clear();
         element.sendKeys(yazi);
     }
