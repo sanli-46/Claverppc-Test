@@ -1,7 +1,7 @@
 # Claverppc-Test
-###"The purpose of the test":; To conduct manual and automated testing of the Claverppc Shop website.
+### The purpose of the test: To conduct manual and automated testing of the Claverppc Shop website.
 #
-####Cases
+#### Cases
 - User Registration
 - User Login
 - Adding a New Address to the User Account
@@ -10,7 +10,7 @@
 - Verifying Products in the Cart
 - Placing an Order and Making a Payment
 - Sending an Email to the Website Team as a User
-
+#
 ## Collaborators
  * _Alperen ŞANLI_ -- **Team Lead** 
  *  _Enes BÜKE_ -- **Tester**
