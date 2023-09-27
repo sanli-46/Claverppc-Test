@@ -1,9 +1,9 @@
 Feature: Send Mail to Website Team functionality
 
   Background:
-    Given Navigate to the cleverppc
-    When Click the sign in button
-    Then Enter email and password and click sign in button
+    Given Navigate to CleverEcommerce
+    When Enter username and password pozitive login
+    Then User should login successfully
 
 
   @SmokeTest @Regression

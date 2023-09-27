@@ -14,7 +14,7 @@ public class AddToCardListStep {
     Elements elm=new Elements();
     @Given("Click Dresses button")
     public void clickDressesButton() {
-        elm.myClick(elm.dressesButton);
+        elm.MyClick(elm.dressesButton);
     }
     Map<Integer, WebElement> selectElements=new HashMap<>();
     @When("Select three random clothes")
@@ -28,15 +28,15 @@ public class AddToCardListStep {
             if (!selectElements.containsKey(randomChoose)) {
                 selectElements.put(randomChoose, selectedElm);
                 elm.actionHover(selectedElm);
-                elm.myClick(elm.AddToCardButtons.get(randomChoose));
-                elm.myClick(elm.ContShoppingButton);
+                elm.MyClick(elm.AddToCardButtons.get(randomChoose));
+                elm.MyClick(elm.ContShoppingButton);
                 System.out.println(selectedElm.getText());
             }
         }
     }
     @Then("Verify a shopping card")
     public void verifyAShoppingCard() {
-        elm.myClick(elm.myCardLabel);
+        elm.MyClick(elm.myCardLabel);
         elm.scrollToElement(elm.shopCardSummaryText);
 
         elm.listSizeAssert(elm.dressesName ,3);

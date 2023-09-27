@@ -21,7 +21,7 @@ public class SendMailSteps {
     public void clickOnTheContactUsButton() throws InterruptedException{
         Thread.sleep(1000);
         cl.scrollToElement(cl.ContactUs); // Bu satır, ContactUs butonuna odaklanmanızı sağlar.
-        cl.myClick(cl.ContactUs);
+        cl.MyClick(cl.ContactUs);
     }
 
     @And("Select Customer service from the Subject Heading dropdown")
@@ -37,7 +37,7 @@ public class SendMailSteps {
     public void enterAnEmailAddress() throws AWTException, InterruptedException{
         Thread.sleep(2000);
         cl.scrollToElement(cl.Email);
-        cl.myClick(cl.Email);
+        cl.MyClick(cl.Email);
         cl.Email.clear();
         cl.mySendKeys(cl.Email, "wokisa92240@alvisani.com");
 
@@ -81,7 +81,7 @@ public class SendMailSteps {
         }
         JavascriptExecutor executor = (JavascriptExecutor) GWD.getDriver();
         executor.executeScript("arguments[0].click();", cl.ChooseFile);
-        cl.myClick(cl.ChooseFile);
+        cl.MyClick(cl.ChooseFile);
 
         StringSelection dosyaYolu = new StringSelection("/Users/macbookair/Desktop/Fatura.jpg");
         Toolkit.getDefaultToolkit().getSystemClipboard().setContents(dosyaYolu, null);
@@ -107,7 +107,7 @@ public class SendMailSteps {
 
         cl.scrollToTop();
         Thread.sleep(1000);
-        cl.myClick(cl.Message);
+        cl.MyClick(cl.Message);
         Thread.sleep(1000);
 
         cl.mySendKeys(cl.Message, "Banka havalesi henüz yapıldı, ödeme dekontu ektedir. Team8 TechnoStudy");
@@ -115,7 +115,7 @@ public class SendMailSteps {
     }
     @And("Click the Send button")
     public void clickTheSendButton() {
-        cl.myClick(cl.SendBtn);
+        cl.MyClick(cl.SendBtn);
     }
 
     @Then("Success message should be displayed.")
@@ -126,13 +126,13 @@ public class SendMailSteps {
 
     @Then("Enter email and password and click sign in button")
     public void enterEmailAndPasswordAndClickSignInButton() {
-        cl.myClick(cl.Email);
+        cl.MyClick(cl.Email);
         cl.mySendKeys(cl.Email, "wokisa9124@alvisani.com");
-        cl.myClick(cl.Password);
+        cl.MyClick(cl.Password);
         cl.mySendKeys(cl.Password, "Team8");
-        cl.myClick(cl.signInBtn);
+        cl.MyClick(cl.signInBtn);
     }
-    @And("User should login successfully")
+    @And("User should login successfully welcome")
     public void userShouldLoginSuccessfully() {
         cl.verifyContainsText(cl.welcomeMessage, "Welcome");
     }
