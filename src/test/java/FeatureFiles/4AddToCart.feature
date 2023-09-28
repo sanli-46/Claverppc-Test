@@ -2,7 +2,7 @@ Feature: Testing CleverPPC's web-based e-commerce platform
 
   Background:
     Given Navigate to CleverEcommerce
-    When Enter username and password pozitive login
+    When Enter username and password positive login
     Then User should login successfully
 
   Scenario: Adding product to cart

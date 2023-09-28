@@ -2,8 +2,9 @@ Feature: Adding new address user account
 
   Background:
     Given Navigate to CleverEcommerce
-    When Click the sign in button
-    Then Enter email and password and click sign in button
+    When Enter username and password positive login
+    Then User should login successfully
+
 
   Scenario: User adds a new address
 

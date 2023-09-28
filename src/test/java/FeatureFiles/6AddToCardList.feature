@@ -1,7 +1,8 @@
 Feature: Add To Card List
+
   Background:
     Given Navigate to CleverEcommerce
-    When Enter username and password pozitive login
+    When Enter username and password positive login
     Then User should login successfully
 
   Scenario: Add to clothes in shopping card

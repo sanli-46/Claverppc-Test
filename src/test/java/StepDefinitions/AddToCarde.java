@@ -22,7 +22,7 @@ public class AddToCarde {
 
     @And("The user hovers over a random product.")
     public void theUserMustHoverOverARandomProduct() {
-        fh.MyScrollToElement(fh.dressesBox1);
+        fh.scrollToElement(fh.dressesBox1);
         for (int i = 0; i < 1; i++) {
             int randomSummer = Parents.randomGenerator(fh.dressesBox.size());
             fh.actionHover(fh.dressesBox.get(randomSummer));
