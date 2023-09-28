@@ -200,5 +200,75 @@ public class Elements extends Parents {
         public WebElement summer;
         @FindBy(xpath = "(//div[@class='product-container'])[1]")
         public WebElement dressesBox1;
+
+        //Case 3 Elements
+
+        @FindBy(css = "a[title='Sitemap']")
+        public WebElement sitemapButton;
+
+        @FindBy(css = "h1[class='page-heading']")
+        public WebElement sitemapText;
+
+        @FindBy(css = "a[title='View a list of my addresses']")
+        public WebElement addressButton;
+
+        @FindBy(css = "h1[class='page-heading']")
+        public WebElement addressText;
+
+        @FindBy(css = "a[title='Add an address']")
+        public WebElement newAddressButton;
+
+        @FindBy(id = "firstname")
+        public WebElement nameInput;
+
+        @FindBy(id = "lastname")
+        public WebElement lastnameInput;
+
+        @FindBy(id = "address1")
+        public WebElement addressInput;
+
+        @FindBy(id = "city")
+        public WebElement cityInput;
+
+        @FindBy(id = "id_state")
+        public WebElement state;
+
+        @FindBy(id = "postcode")
+        public WebElement zipCode;
+
+        @FindBy(id = "phone")
+        public WebElement phone;
+
+        @FindBy(id = "alias")
+        public WebElement addressAlias;
+
+        @FindBy(id = "submitAddress")
+        public WebElement saveButton;
+
+        @FindBy(xpath = "(//h3[@class='page-subheading'])[2]")
+        public WebElement addressConfirm;
+
+        @FindBy(xpath = "(//a[@title='Delete'])[2]")
+        public WebElement deleteSecondAddress;
+
+        public WebElement ElementGet(String element) {
+                switch (element) {
+                        case "nameInput": return this.nameInput;
+                        case "lastnameInput": return this.lastnameInput;
+                        case "addressInput": return this.addressInput;
+                        case "cityInput": return this.cityInput;
+                        case "zipCode": return this.zipCode;
+                        case "phone": return this.phone;
+                        case "addressAlias": return this.addressAlias;
+
+                }
+
+                return null;
+        }
+
+
+
+
 }
+
 
