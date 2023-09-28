@@ -20,7 +20,7 @@ public class AddToCarde {
         fh.MyClick(fh.summer);
     }
 
-    @And("The user hovers over a random product")
+    @And("The user hovers over a random product.")
     public void theUserMustHoverOverARandomProduct() {
         fh.MyScrollToElement(fh.dressesBox1);
         for (int i = 0; i < 1; i++) {

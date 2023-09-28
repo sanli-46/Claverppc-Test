@@ -234,8 +234,6 @@ public class Elements extends Parents {
         public WebElement message;
         @FindBy(xpath= "(//a[@title='Summer Dresses'])[1]")
         public WebElement summer;
-        @FindBy(xpath = "//span[text()='Add to cart']")
-        public WebElement AddToCardButton;
         @FindBy(xpath = "(//div[@class='product-container'])[1]")
         public WebElement dressesBox1;
 }

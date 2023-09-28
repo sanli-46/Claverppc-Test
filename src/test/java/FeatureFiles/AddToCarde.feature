@@ -8,5 +8,5 @@ Feature: Testing CleverPPC's web-based e-commerce platform
   Scenario: Adding product to cart
     When The user is directed to the women category by clicking on the Women category
     And Clicks on the Summer dress product and is directed to the product page
-    And The user hovers over a random product
+    And The user hovers over a random product.
     Then It must be verified that the product has been successfully added to the cart
