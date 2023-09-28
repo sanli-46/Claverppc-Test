@@ -1,7 +1,7 @@
 
 Feature: DataTable Register Functionality
 
-  @SmokeTest @Regression
+
   Scenario: Create New Account
     Given Navigate to CleverEcommerce
     When Click the sign in button
@@ -12,7 +12,7 @@ Feature: DataTable Register Functionality
       | Field       | Value                       |
       | FirstName   | Team                        |
       | LastName    | Technostudy                 |
-      | Email       | wokisa921240@alvisani.com   |
+      | Email       | test.eaves13@gmail.com      |
       | Password    | Teammmm                     |
 
     And Click on the element in Elements

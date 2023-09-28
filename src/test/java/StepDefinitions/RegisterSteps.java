@@ -30,7 +30,7 @@ public class RegisterSteps {
         Thread.sleep(1000);
         cl.myJsClick(cl.NewEmail);
         Thread.sleep(1000);
-        cl.mySendKeys(cl.NewEmail, "wokisa921240@alvisani.com");
+        cl.mySendKeys(cl.NewEmail, "test.eaves13@gmail.com");
         Thread.sleep(1000);
         cl.MyClick(cl.CreateAccountBtn);
 

@@ -9,11 +9,9 @@ import org.testng.Assert;
 
 
 public class Checkout {
-
     Elements cl = new Elements();
-
-    @And("Cart and chackout click")
-    public void cartAndChackoutClick() {
+    @And("Cart and checkout click")
+    public void cartAndCheckoutClick() {
         cl.MyClick(cl.cartBtn);
         cl.actionHover(cl.cartBtn);
         cl.actionClick(cl.checkoutBtn);

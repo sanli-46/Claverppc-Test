@@ -3,7 +3,7 @@ Feature: Checkout
   Background:
 
     Given Navigate to CleverEcommerce
-    When Enter username and password pozitive login
+    When Enter username and password positive login
     Then User should login successfully
     And Click Dresses button
     When Select three random clothes
@@ -11,7 +11,7 @@ Feature: Checkout
 
   Scenario: OrderAndPayment
 
-    And Cart and chackout click
+    And Cart and checkout click
     When Going the payment way
     Then Payment methods checks
     And Payment completion

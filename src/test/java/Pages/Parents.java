@@ -30,7 +30,6 @@ public class Parents {
     }
     public void MyClick(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
-        // MyScrollToElement(element);
         element.click();
 
     }
@@ -39,21 +38,14 @@ public class Parents {
     }
     public void MyScrollClick(WebElement element) {
         wait.until(ExpectedConditions.visibilityOf(element));
-        MyScrollToElement(element);
+        scrollToElement(element);
         element.click();
 
     }
 
-
-
-    public void MyScrollToElement(WebElement element) {
-        JavascriptExecutor js = (JavascriptExecutor) GWD.getDriver();
-        js.executeScript("arguments[0].scrollIntoView();", element);
-    }
-
     public void MyAssert(WebElement element,String number){
         wait.until(ExpectedConditions.visibilityOf(element));
-        MyScrollToElement(element);
+        scrollToElement(element);
         String text=element.getText();
         boolean countainsNumber=text.contains(number);
 
@@ -74,6 +66,7 @@ public class Parents {
     }
 
     public void scrollToElement(WebElement element) {
+        wait.until(ExpectedConditions.visibilityOf(element));
         JavascriptExecutor js = (JavascriptExecutor) GWD.getDriver();
         js.executeScript("arguments[0].scrollIntoView();", element);
     }

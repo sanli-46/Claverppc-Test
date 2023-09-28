@@ -2,11 +2,9 @@ Feature: Send Mail to Website Team functionality
 
   Background:
     Given Navigate to CleverEcommerce
-    When Enter username and password pozitive login
+    When Enter username and password positive login
     Then User should login successfully
 
-
-  @SmokeTest @Regression
   Scenario: Successfully sending a receipt email
 
     When Click on the Contact Us button

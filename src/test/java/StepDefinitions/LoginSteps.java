@@ -27,11 +27,11 @@ public class LoginSteps {
         elm.verifyContainsText(elm.loginErrorMsg,"error");
     }
 
-    @And("Enter username and password pozitive login")
-    public void enterUsernameAndPasswordPozitiveLogin() {
+    @And("Enter username and password positive login")
+    public void enterUsernameAndPasswordPositiveLogin() {
         elm.MyClick(elm.HmSignInButton);
-        elm.mySendKeys(elm.emailInput,"test.enes12@gmail.com");
-        elm.mySendKeys(elm.passwInput,"e.b1357");
+        elm.mySendKeys(elm.emailInput,"test.eaves13@gmail.com");
+        elm.mySendKeys(elm.passwInput,"Teammmm");
         elm.MyClick(elm.signInButton);
     }
     @And("User should login successfully")
