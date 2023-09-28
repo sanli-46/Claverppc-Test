@@ -191,42 +191,6 @@ public class Elements extends Parents {
 
         //AddtoCardListElement-E*
 
-        //AddNewAddressElements-E
-        @FindBy(css = "a[title='Sitemap']")
-        public WebElement sideMap;
-        @FindBy(xpath = "//a[@title='View a list of my addresses']")
-        public WebElement addressesButton;
-        @FindBy(xpath = "//a[@title='Add an address']")
-        public WebElement addAddressButton;
-        @FindBy(xpath = "//input[@name='firstname']")
-        public WebElement nameLabel;
-        @FindBy(xpath = "//input[@name='lastname']")
-        public WebElement lastNameLabel;
-        @FindBy(xpath = "//input[@name='company']")
-        public WebElement companyLabel;
-        @FindBy(xpath = "//input[@name='address1']")
-        public WebElement addressLabel;
-        @FindBy(xpath = "//input[@name='address2']")
-        public WebElement addLine2;
-        @FindBy(xpath = "//input[@name='city']")
-        public WebElement cityLabel;
-        @FindBy(xpath = "//select[@name='id_state']")
-        public WebElement stateSelect;
-        @FindBy(xpath = "//input[@name='postcode']")
-        public WebElement zipCode;
-        @FindBy(xpath = "//select[@name='id_country']")
-        public WebElement countrySelect;
-        @FindBy(xpath = "//input[@name='phone']")
-        public WebElement homePhone;
-        @FindBy(xpath = "//input[@name='phone_mobile']")
-        public WebElement mobilePhone;
-        @FindBy(xpath = "//input[@name='alias']")
-        public WebElement assignAddress;
-        @FindBy(xpath = "//button[@name='submitAddress']")
-        public WebElement saveButton;
-        @FindBy(xpath = "//div[@class='col-xs-12 col-sm-6 address']")
-        public WebElement addressArea;
-
         //Test AddtoCard
         @FindBy(xpath = "(//a[@title='Women'])[1]")
         public WebElement women;
